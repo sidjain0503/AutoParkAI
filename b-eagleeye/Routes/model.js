@@ -24,8 +24,9 @@ router.get("/model/entry", async (req, res) => {
 
         avaiable_spaces.sort(function (a, b) {
             return (
-                Math.sqrt((mapping[a][0] - 0) * (mapping[a][0] - 0) + (mapping[a][1] - 3) * (mapping[a][1] - 3)) -
-                Math.sqrt((mapping[b][0] - 0) * (mapping[b][0] - 0) + (mapping[b][1] - 3) * (mapping[b][1] - 3))
+                Math.sqrt((mapping[b][0] - 0) * (mapping[b][0] - 0) + (mapping[b][1] - 3) * (mapping[b][1] - 3))-
+                Math.sqrt((mapping[a][0] - 0) * (mapping[a][0] - 0) + (mapping[a][1] - 3) * (mapping[a][1] - 3)) 
+                
             );
         });
         console.log(avaiable_spaces);
@@ -34,7 +35,7 @@ router.get("/model/entry", async (req, res) => {
 
         client.messages
             .create({
-                body: `https://643bcd51d45d4c25d62bedd4--codefiesta-eagleeye.netlify.app/#/navigate/${popped}`,
+                body: `https://643bdc531b10f43395524ad4--codefiesta-eagleeye.netlify.app/#/navigate/${popped}`,
                 from: '+15076269902',
                 to: `+91${phonenumber}`
             }).then(message => console.log(message.sid));
