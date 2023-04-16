@@ -13,13 +13,13 @@ const Footer = () => {
                             <a href="https://www.linkedin.com/in/disha-jain-90a554229" className="mr-4 hover:underline md:mr-6 ">Disha Jain</a>
                         </li>
                         <li>
-                            <a href="#" className="mr-4 hover:underline md:mr-6">Anshuman</a>
+                            <a href="https://www.linkedin.com/in/anshuman-kumar-a04477250/" className="mr-4 hover:underline md:mr-6">Anshuman</a>
                         </li>
                         <li>
-                            <a href="#" className="mr-4 hover:underline md:mr-6">Yograj</a>
+                            <a href="https://github.com/yogitheboss" className="mr-4 hover:underline md:mr-6">Yograj</a>
                         </li>
                         <li>
-                            <a href="#" className="hover:underline">Siddhharth</a>
+                            <a href="https://www.linkedin.com/in/siddharth-chopda-a15946201/" className="hover:underline">Siddhharth</a>
                         </li>
                     </ul>
                 </div>

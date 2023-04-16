@@ -4,7 +4,7 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import Body from './components/Body'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 import {  Route, Routes } from 'react-router-dom'
 import Body1 from './components/Navigation/Body1'
 
@@ -17,7 +17,7 @@ function App() {
      
         <Routes>
 
-          <Route path='/navigate' element={<>
+          <Route path='/navigate/:id' element={<>
             <Navbar />
             <Body1 />
             <Footer />
