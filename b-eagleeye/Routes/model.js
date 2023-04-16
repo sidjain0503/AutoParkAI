@@ -8,9 +8,6 @@ router.post("/model/entry", async (req, res) => {
     // get all parking details
     try {
         const data = req.body.data
-        // console.log(req.body);
-        // res.json({body:req.body})
-        // Example usage:
         const details = await Parking_register.find()
         let avaiable_spaces = details.filter((park) => park.occupied == "FALSE").map((park) => park.parkingslot_id)
         let mapping = {}
@@ -37,7 +34,7 @@ router.post("/model/entry", async (req, res) => {
 
         res.json({
             success: true,
-            details: plot
+            details: details
         })
     } catch (err) {
         console.log(err);
@@ -50,7 +47,7 @@ router.post("/model/entry", async (req, res) => {
 })
 
 
-router.get("/model/exit", findParkedCar)
+router.post("/model/exit", findParkedCar)
 
 
 

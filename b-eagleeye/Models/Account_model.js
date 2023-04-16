@@ -3,19 +3,15 @@ const { Schema } = mongoose;
 
 // for creating account schema
 const accountSchema = new Schema({
-    user_name: {
-        type: String,
-        required: true
-    },
     car_number:{
         type: String,
         required:true
     },
     amount: {
-        type: Number,
+        type: String,
         required: true
     }});
 
 // for creating account model
-module.exports = mongoose.model('account', accountSchema);
+module.exports = mongoose.model('accounts', accountSchema);
 
