@@ -18,12 +18,11 @@ body{
 }
 
 .item{
-    width: 150px;
-    height: 90px;
+    width: 13vw;
+    height: 10vh;
     background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #000;
+    border: 1px solid rgb(146, 142, 142);
+    box-shadow: 18px 20px 38px -15px rgba(0,0,0,0.75);
     transition: all 0.5s ease;
 }
 
@@ -32,11 +31,11 @@ body{
 }
 
 .parking_space{
-    background-color: green;
+    background-color: hsl(120deg 88.93% 53.91% / 81%);
 }
 
 .road{
-    background-color: #6a6767;
+    background-color: #9f9c9c;
 }
 
 .path_color{

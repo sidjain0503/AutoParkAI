@@ -5,7 +5,7 @@ const bodyParser = require("body-parser")
 const cors = require('cors')
 const connection = require('./db')
 
-const port = process.env.PORT 
+const port = process.env.PORT || 3000
 
 
 connection();  //database connection
@@ -27,7 +27,7 @@ app.get("/",(req,res)=>{
     res.send("Server is running ....")
 
 })
-
+  
 app.listen(port,()=>{
-    console.log(`server running... on http://localhost:${port}`)
+    console.log(`server running... on ${port}`)
 })
