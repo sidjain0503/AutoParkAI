@@ -91,6 +91,7 @@ import {useLocation} from 'react-router-dom'
             ids++;
         }
     }
+    console.log(mapping)    ;
     function isArrayInGroup(targetArray, group) {
         return group.some((array) => arraysMatch(array, targetArray));
       }
@@ -120,8 +121,16 @@ import {useLocation} from 'react-router-dom'
             }   
         });
         path.forEach((item, index) => {
+            
             document.getElementById(`${item[0] * 7 + item[1]}`).classList.add("path_color");
-        });    
+
+        });
+        let idk=0
+        document.querySelectorAll('.item').forEach(park=>{
+            park.innerText=idk;
+            idk++;
+        })
+
     }, []);
 
     return (
@@ -141,20 +150,20 @@ import {useLocation} from 'react-router-dom'
                 <div className="item road">x</div>
                 <div className="item road">x</div>
                 <div className="item road">x</div>
-                <div className="item parking_space">1</div>
-                <div className="item parking_space">1</div>
-                <div className="item parking_space">1</div>
+                <div className="item parking_space">7</div>
+                <div className="item parking_space">8</div>
+                <div className="item parking_space">9</div>
+                <div className="item road">x</div>
+                <div className="item parking_space">10</div>
+                <div className="item parking_space">11</div>
+                <div className="item parking_space">12</div>
+                <div className="item parking_space">13</div>
+                <div className="item parking_space">14</div>
+                <div className="item parking_space">15</div>
                 <div className="item road">1</div>
-                <div className="item parking_space">1</div>
-                <div className="item parking_space">1</div>
-                <div className="item parking_space">1</div>
-                <div className="item parking_space">1</div>
-                <div className="item parking_space">1</div>
-                <div className="item parking_space">1</div>
-                <div className="item road">1</div>
-                <div className="item parking_space">1</div>
-                <div className="item parking_space">1</div>
-                <div className="item parking_space">1</div>
+                <div className="item parking_space">16</div>
+                <div className="item parking_space">17</div>
+                <div className="item parking_space">18</div>
                 <div className="item road ">x</div>
                 <div className="item road">x</div>
                 <div className="item road">x</div>
@@ -169,13 +178,7 @@ import {useLocation} from 'react-router-dom'
                 <div className="item parking_space">1</div>
                 <div className="item parking_space">1</div>
                 <div className="item parking_space">1</div>
-                <div className="item parking_space">1</div>
-                <div className="item parking_space">1</div>
-                <div className="item parking_space">1</div>
-                <div className="item road">1</div>
-                <div className="item parking_space">1</div>
-                <div className="item parking_space">1</div>
-                <div className="item parking_space">1</div>
+                
             </div>
         </div>
     );
