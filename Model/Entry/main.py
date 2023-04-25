@@ -33,7 +33,7 @@ while True:
             read = ''.join(e for e in read if e.isalnum())
             if read:
                 if (len(read) == 10) & (read[0:1].isalpha()) & (read[4:5].isalpha()) & (read[6:10].isdigit()):
-                    data = read
+                    data = read.upper()
                     gotit = True
         if k & 0xFF == ord('q'):
             break
@@ -42,11 +42,10 @@ while True:
     else:
         break
 
-
-urlEntry = 'http://localhost:8080/api/model/entry'
+print(data)
+# urlEntry = 'http://localhost:8080/api/model/entry'
 myobj = {'data': data}
-
-x = requests.post(urlEntry, json = myobj)
-# print(x)
+# x = requests.post(urlEntry, json = myobj)
+print(x)
 cap.release()
 cv2.destroyAllWindows()
