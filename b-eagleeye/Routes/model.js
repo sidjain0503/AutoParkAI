@@ -7,7 +7,7 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
-router.get("/model/entry", async (req, res) => {
+router.post("/model/entry", async (req, res) => {
     // get all parking details
     try {
         const data = req.body.data
@@ -32,7 +32,7 @@ router.get("/model/entry", async (req, res) => {
         console.log(avaiable_spaces);
         let popped = avaiable_spaces.pop()
         let response = await Parking_register.updateMany({ "parkingslot_id": `${popped}` }, { $set: { "occupied": "TRUE", "entry_time": `${Date.now()}`, "car_number": `${data}` } })
-
+        let phonenumber=8770312556
         client.messages
             .create({
                 body: `https://643bdc531b10f43395524ad4--codefiesta-eagleeye.netlify.app/#/navigate/${popped}`,
