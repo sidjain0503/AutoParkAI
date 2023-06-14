@@ -17,4 +17,32 @@ This project allots the parking lot to the vehicle using its specialized algorit
 1. Open-CV
 2. Haarcascades for detecting the numberplate.
 3. Tesseract and pytesseract for recognizing the license number from the number plate.
-4. MERN stack for the web application. 
+4. MERN stack for the web application.
+
+## Future
+
+1. Creating a more realistic frontend : We are planning to build a new frontend for navigation whose figma designs you can see here: [EagleEye's New Design](https://www.figma.com/file/kGOv1NDaM6uUNUEkwNKUtI/Parking?type=design&node-id=4-1311)
+
+2. Features and integrations : Google map's api integration to find the nearest available parking area . 
+
+## Run Locally
+
+Before setting up the project in your local machine make sure you have nodejs , python , pip, codeeditor , pycharm installed on your device . 
+
+```bash
+git clone https://github.com/sidjain0503/codefiesta.git
+
+
+##for backend 
+cd b-eagleeye
+npm install
+npm run start 
+
+##for frontend
+npm install
+cd f-eagleeye
+npm start
+
+```
+
+ Once the frontend and the backend are up and running . Open up the models folder in pycharm and install the dependencies using pip . Run the modals and you're done with your setup !! 
