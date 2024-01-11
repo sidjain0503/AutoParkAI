@@ -32,11 +32,11 @@ router.post("/model/entry", async (req, res) => {
         console.log(avaiable_spaces);
         let popped = avaiable_spaces.pop()
         let response = await Parking_register.updateMany({ "parkingslot_id": `${popped}` }, { $set: { "occupied": "TRUE", "entry_time": `${Date.now()}`, "car_number": `${data}` } })
-        let phonenumber=8770312556
+        let phonenumber=6264537931
         client.messages
             .create({
-                body: `https://643bdc531b10f43395524ad4--codefiesta-eagleeye.netlify.app/#/navigate/${popped}`,
-                from: '+15076269902',
+                body: `https://codefiesta-two.vercel.app/#/navigate/12`,
+                from: '+12058606436',
                 to: `+91${phonenumber}`
             }).then(message => console.log(message.sid));
         res.json({

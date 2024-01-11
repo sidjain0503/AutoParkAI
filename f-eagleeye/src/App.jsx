@@ -20,13 +20,13 @@ function App() {
           <Route path='/navigate/:id' element={<>
             <Navbar />
             <Body1 />
-            <Footer />
+            {/* <Footer /> */}
           </>} />
 
           <Route path='/' element={<>
             <Navbar />
             <Body />
-            <Footer />
+            {/* <Footer /> */}
           </>} />
         </Routes>
      

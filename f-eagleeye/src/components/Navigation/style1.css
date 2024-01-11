@@ -31,7 +31,7 @@ body{
 }
 
 .parking_space{
-    background-color: hsl(120deg 88.93% 53.91% / 81%);
+    background-color: hsla(232, 89%, 54%, 0.81);
 }
 
 .road{
@@ -39,5 +39,5 @@ body{
 }
 
 .path_color{
-    background-color: #e3e642;
+    background-color: #42e68c;
 }
